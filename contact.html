@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact me</title>
+  </head>
+  <body>
+    <h3>Contact</h3>
+    <ol><!---Ordered list--->
+      <li>Alderstrasse 51</li>
+      <li>cel. 5555678900</li>
+      <li>julio@outlook.com</li>
+    </ol>
+    <hr>
+  <!---action es lo que se hace al dar en el botón submit, mailto manda la info a un draft correo con el "name" y su valor que le pusieron.--->
+    <form action="mailto:info@gmail.com" method="post" enctype="text/plain"><!---Formulario--->
+      <label>Your name:</label><!---Caja/Etiqueta--->
+      <input type="text" name="Yourname"><!---Input del usuario---><br><!---br es enter--->
+      <label>Email:</label>
+      <input type="email" name="YourEmail" value=""><br><!-- con type password se oculta lo que escribes--->
+      <label>Your message:</label>
+      <textarea name="YourMessage" rows="10" cols="30"></textarea><br><!-- crows da altura, column da ancho--->
+      <label>Do you want to sign up to the email list?</label>
+      <input type="checkbox" name="Signup" value=""><br><!--Checkbox--->
+      <input type="submit" name="" value="Submit"><!---En value va lo que tù le quieras poner--->
+    </form>
+  </body>
+</html>
